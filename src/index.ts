@@ -1,1 +1,1 @@
-export const x = { msg: "hello world" };
+export * from "./search";
