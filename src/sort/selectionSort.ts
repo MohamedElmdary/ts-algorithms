@@ -1,3 +1,5 @@
+import { swap } from "../utils";
+
 function selectionSort<T>(list: T[]): T[] {
     const result = list.slice();
     const len = result.length;
@@ -10,9 +12,7 @@ function selectionSort<T>(list: T[]): T[] {
             }
         }
         if (minIndex != a) {
-            const temp = result[minIndex];
-            result[minIndex] = result[a];
-            result[a] = temp;
+            swap(result, minIndex, a);
         }
     }
 
