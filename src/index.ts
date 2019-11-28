@@ -1,3 +1,2 @@
-export * from "./utils";
-export * from "./search";
-export * from "./sort";
+export * from './utils';
+export * from './algorithms';
