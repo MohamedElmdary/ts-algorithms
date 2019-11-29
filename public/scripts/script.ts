@@ -1,14 +1,14 @@
 import {
-  // linearSearch,
-  // binarySearch,
-  // bubbleSort,
-  // selectionSort,
-  // insertionSort,
-  // mergeSort,
-  // quickSortHelper,
-  // radixSort,
-  /* =============== */
-  SinglyLinkedList
+    // linearSearch,
+    // binarySearch,
+    // bubbleSort,
+    // selectionSort,
+    // insertionSort,
+    // mergeSort,
+    // quickSortHelper,
+    // radixSort,
+    /* =============== */
+    SinglyLinkedList
 } from '../../src';
 
 // const searchList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -26,6 +26,12 @@ import {
 // console.log('radixSort ========>', radixSort(sortList));
 
 const singleLinkedList = new SinglyLinkedList();
-singleLinkedList.push(4).push(5);
-singleLinkedList.push(7);
+singleLinkedList
+    .push(4)
+    .push(5)
+    .push(6)
+    .push(7)
+    .push(8)
+    .push(9)
+    .push(10);
 console.log('singleLinkedList\n', singleLinkedList);

@@ -97,7 +97,47 @@ class SinglyLinkedList<T> {
         return true;
     }
 
-    /* 17. remove */
+    public remove(index: number): ListNode<T> | null {
+        if (index < 0 || index >= this.length) {
+            return null;
+        }
+        if (!index) {
+            return this.shift();
+        }
+        if (index === this.length - 1) {
+            return this.pop();
+        }
+        this.length--;
+        const previousNode = this.get(--index);
+        const removedNode = previousNode.next;
+        previousNode.next = removedNode.next;
+        return removedNode;
+    }
+
+    public reverse() {
+        let node = this.head;
+        [this.tail, this.head] = [this.head, this.tail];
+        let [next, prev] = [null, null];
+        for (let i = 0; i < this.length; i++) {
+            [next, node.next] = [node.next, prev];
+            [prev, node] = [node, next];
+        }
+        return this;
+    }
+
+    public toArray(): ListNode<T>[] {
+        const nodes: ListNode<T>[] = [];
+        let node = this.head;
+        while (node) {
+            nodes.push(node);
+            node = node.next;
+        }
+        return nodes;
+    }
+
+    public print(): void {
+        console.log(this.toArray());
+    }
 }
 
 export { SinglyLinkedList };
