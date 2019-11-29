@@ -8,7 +8,9 @@ import {
     // quickSortHelper,
     // radixSort,
     /* =============== */
-    SinglyLinkedList
+    SinglyLinkedList,
+    Stack,
+    Queue
 } from '../../src';
 
 // const searchList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -25,13 +27,19 @@ import {
 // console.log('quickSort ========>', quickSortHelper(sortList));
 // console.log('radixSort ========>', radixSort(sortList));
 
-const singleLinkedList = new SinglyLinkedList();
-singleLinkedList
-    .push(4)
-    .push(5)
-    .push(6)
-    .push(7)
-    .push(8)
-    .push(9)
-    .push(10);
-console.log('singleLinkedList\n', singleLinkedList);
+// const singleLinkedList = new SinglyLinkedList();
+// singleLinkedList
+//     .push(4)
+//     .push(5)
+//     .push(6)
+//     .push(7)
+//     .push(8)
+//     .push(9)
+//     .push(10);
+// console.log('singleLinkedList\n', singleLinkedList);
+
+const stack = new Stack();
+console.log(stack);
+
+const queue = new Queue();
+console.log(queue);
