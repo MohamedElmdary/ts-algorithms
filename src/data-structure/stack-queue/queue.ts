@@ -27,7 +27,7 @@ class Queue<T> {
         }
         const node = this.first;
         --this.size;
-        if (this.size === 1) {
+        if (!this.size) {
             this.last = null;
         }
         this.first = this.first.next;
